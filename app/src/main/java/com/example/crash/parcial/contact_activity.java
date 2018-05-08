@@ -36,11 +36,11 @@ public class contact_activity extends AppCompatActivity {
 
         Intent intent = getIntent();
         final String name = intent.getExtras().getString("name");
-        String lastname = intent.getExtras().getString("lastname");
+        final String lastname = intent.getExtras().getString("lastname");
         final int phone = intent.getExtras().getInt("phone");
         String email = intent.getExtras().getString("email");
         String address = intent.getExtras().getString("address");
-        String bithdate = intent.getExtras().getString("birthdate");
+        final String bithdate = intent.getExtras().getString("birthdate");
         int image = intent.getExtras().getInt("image");
         int id = intent.getExtras().getInt("id");
 
@@ -78,10 +78,16 @@ public class contact_activity extends AppCompatActivity {
 
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra(Intent.EXTRA_TEXT,name);
-                intent.setType("text/plain");
-                startActivity(intent);
+                intent.putExtra(Intent.EXTRA_TEXT,"Name: "+name+" Lastname: "+lastname+" Phone: "+phone);
 
+                intent.setType("text/plain");
+// Create intent to show chooser
+                Intent chooser = Intent.createChooser(intent, "Share");
+
+// Verify the intent will resolve to at least one activity
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(chooser);
+                }
             }
         });
 

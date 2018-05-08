@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Parcial</string>
+    <string name="title_activity_contact_acivity">Agregar Contacto</string>
+    <string name="action_settings">Opciones</string>
+    <string name="name">Nombre:</string>
+    <string name="namehint">Nombre</string>
+    <string name="lastname">Apellido:</string>
+    <string name="lastnameHint">Apellido</string>
+    <string name="phone_number">Numero Telefonico</string>
+    <string name="phoneHint">Telefono</string>
+    <string name="id">ID:</string>
+    <string name="idhint">ID</string>
+    <string name="e_mail">Correo electronico:</string>
+    <string name="e_mailHint">correo</string>
+    <string name="address">Direccion:</string>
+    <string name="addressHint">Direccion</string>
+    <string name="birthday">Cumpleaños:</string>
+    <string name="add_date">Agregar</string>
+    <string name="date">Fecha</string>
+    <string name="add_contact">Agregar Contacto</string>
+    <string name="birthdayHint">Cumpleaños</string>
+    <string name="title_activity_main2" translatable="false">Contactos</string>
+    <string name="contact_name">nombre_contacto</string>
+    <string name="search">Buscar</string>
+</resources>

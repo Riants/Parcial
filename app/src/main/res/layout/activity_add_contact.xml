@@ -8,7 +8,7 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name:"
+                android:text="@string/name"
                 android:textSize="24sp"
                 />
 
@@ -30,14 +30,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:hint="Name"
+                android:hint="@string/namehint"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lastname:"
+                android:text="@string/lastname"
                 android:textSize="24sp"
                 />
 
@@ -47,14 +47,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:hint="Lastname"
+                android:hint="@string/lastnameHint"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone Number:"
+                android:text="@string/phone_number"
                 android:textSize="24sp"
                 />
 
@@ -64,14 +64,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:hint="phone"
-                android:textSize="20sp" />
+                android:hint="@string/phoneHint"
+                android:textSize="20sp"
+                android:inputType="phone"/>
 
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID:"
+                android:text="@string/id"
                 android:textSize="24sp"
                 />
 
@@ -81,13 +82,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:hint="ID"
-                android:textSize="20sp" />
+                android:hint="@string/idhint"
+                android:textSize="20sp"
+                android:inputType="number"/>
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E-mail:"
+                android:text="@string/e_mail"
                 android:textSize="24sp"
                 />
 
@@ -97,14 +99,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:hint="e-mail"
-                android:textSize="20sp" />
+                android:hint="@string/e_mailHint"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"/>
 
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address:"
+                android:text="@string/address"
                 android:textSize="24sp"
                 />
 
@@ -114,14 +117,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:hint="Address"
+                android:hint="@string/addressHint"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Birthdate:"
+                android:text="@string/birthday"
                 android:textSize="24sp"/>
 
             <Button
@@ -129,15 +132,25 @@
                 android:id="@+id/buttonBday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="add date" />
+                android:text="@string/add_date" />
 
             <TextView
                 android:layout_margin="16dp"
                 android:id="@+id/Bday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="date"
+                android:text="@string/date"
                 android:textSize="20dp"/>
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:id="@+id/buttonAdd"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_contact" />
 
         </LinearLayout>
 
